@@ -1,0 +1,118 @@
+.Nav {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogoDiv {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.LogoIcon,
+.go {
+    font-size: 2.5rem;
+    color: brown;
+}
+
+.LogoText {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.singIn {
+    background-color: brown;
+    border: transparent;
+    color: #fee26e;
+    font-size: 1.8rem;
+    padding: .3rem .6rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.menuItems {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 1.5rem;
+    gap: 3rem;
+}
+
+.btnDiv {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.menuDiv {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #34495e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.MenuItem {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    border: 1px solid #34495e;
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    cursor: pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 2px;
+}
+
+.heroContent {
+    position: relative;
+    width: 100%;
+    height: 30.75rem;
+}
+
+.HeroImg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+.TextDiv {
+    position: absolute;
+    text-align: center;
+    top: 18rem;
+    left: 50%;
+    width: 55%;
+    transform: translate(-50%);
+}
+
+.heroTitle {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    color: #f1c40f;
+    font-weight: 700;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.heroText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: aliceblue;
+    letter-spacing: 0.0313rem;
+    font-style: italic;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
