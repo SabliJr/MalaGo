@@ -1,8 +1,15 @@
+.theHeader {
+    background-color: #F9F9F9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
 .Nav {
-    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 1rem 0 .8rem;
 }
 
 .LogoDiv {
@@ -19,16 +26,16 @@
 
 .LogoText {
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: #243763;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 3px;
     font-weight: 700;
 }
 
 .singIn {
-    background-color: brown;
+    background-color: #243763;
     border: transparent;
-    color: #fee26e;
+    color: #FFEBB7;
     font-size: 1.8rem;
     padding: .3rem .6rem;
     border-radius: .5rem;
@@ -41,7 +48,7 @@
 .menuItems {
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 1.5rem;
+    margin: 3rem 0 1.2rem;
     gap: 3rem;
 }
 
@@ -75,6 +82,11 @@
     cursor: pointer;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 2px;
+}
+
+.TheHero {
+    max-width: 1124px;
+    margin: 0 auto;
 }
 
 .heroContent {

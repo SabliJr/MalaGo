@@ -1,15 +1,13 @@
 import React from "react";
 import "./AboutMalt.css";
 
-import ReactPlayer from "react-player";
-
 interface IProps {}
 
 const AboutMalt: React.FC<IProps> = (props) => {
   return (
     <section className='aboutMalt'>
       <article className='textArt'>
-        <h3>Why you should visit Malta</h3>
+        <h3>Why you should visit Malta ?</h3>
         <p>
           With more than 7,000 years of history and countless megaliths,
           medieval dungeons and vibrant towns and villages, Malta is one of the
@@ -24,10 +22,13 @@ const AboutMalt: React.FC<IProps> = (props) => {
         </p>
       </article>
       <div className='videoDiv'>
-        <ReactPlayer
-          url='https://www.youtube.com/watch?v=MYr8xuEO-l4'
-          width={"100%"}
-        />
+        <iframe
+          width='625'
+          height='350'
+          className='IVideo'
+          src='https://www.youtube-nocookie.com/embed/MYr8xuEO-l4?controls=0'
+          title='YouTube video player'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
       </div>
     </section>
   );
