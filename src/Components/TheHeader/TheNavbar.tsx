@@ -13,22 +13,24 @@ interface ITheNav {}
 
 const TheNavbar: React.FC<ITheNav> = (props) => {
   return (
-    <header>
-      <nav className='Nav'>
-        <div className='LogoDiv'>
-          <MdTravelExplore className='LogoIcon' />
-          <h1 className='LogoText'>
-            Mala<span className='go'>Go</span>
-          </h1>
-        </div>
-        <div className='btnDiv'>
-          <div className='menuDiv'>
-            <li>Travel Info</li>
-            <li>Tickets & Offers</li>
+    <>
+      <header className='theHeader'>
+        <nav className='Nav'>
+          <div className='LogoDiv'>
+            <MdTravelExplore className='LogoIcon' />
+            <h1 className='LogoText'>
+              Mala<span className='go'>Go</span>
+            </h1>
           </div>
-          <button className='singIn'>Sing in</button>
-        </div>
-      </nav>
+          <div className='btnDiv'>
+            <div className='menuDiv'>
+              <li>Travel Info</li>
+              <li>Tickets & Offers</li>
+            </div>
+            <button className='singIn'>Sing in</button>
+          </div>
+        </nav>
+      </header>
 
       <section className='TheHero'>
         <article className='menuItems'>
@@ -60,7 +62,7 @@ const TheNavbar: React.FC<ITheNav> = (props) => {
           </div>
         </div>
       </section>
-    </header>
+    </>
   );
 };
 
