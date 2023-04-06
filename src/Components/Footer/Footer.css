@@ -1,0 +1,54 @@
+.footer {
+    width: 1124px;
+    margin: 8rem auto 5rem;
+}
+
+.footerArt {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyRight {
+    font-size: .8rem;
+    color: rgb(118, 114, 114);
+    margin: .3rem 0;
+}
+
+.footerLinks h4 {
+    color: #243763;
+    margin: .5rem 0;
+}
+
+.footerLinks li {
+    margin: .2rem;
+    font-size: .8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2c3e50;
+    cursor: pointer;
+    list-style: none;
+    letter-spacing: .5px;
+}
+
+.socialDiv h4 {
+    font-size: .9rem;
+    color: #243763;
+    margin: .5rem auto;
+    width: 70%;
+    text-align: center;
+}
+
+.socialDiv div {
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.socialDiv div>* {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    cursor: pointer;
+}

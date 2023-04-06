@@ -1,6 +1,7 @@
 import React from "react";
 import "./Activities.css";
 
+//Images
 import BlueLagoon from "../../Assets/Blue-Lagoon.webp";
 import Culture from "../../Assets/Culture.jpg";
 import Diving from "../../Assets/Diving.jpeg";
@@ -10,12 +11,22 @@ import Climbing from "../../Assets/Climbing.webp";
 import Cruises from "../../Assets/Malta.jpeg";
 import WaterSports from "../../Assets/Kayaking.jpeg";
 
+//Icons
+import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
+
 interface IActivities {}
 
 const Activities: React.FC<IActivities> = (props) => {
   return (
     <section className='activitiesSec'>
-      <h2 className='activities'>Activities</h2>
+      <div className='ArrowDiv'>
+        <h2 className='activities'>Activities</h2>
+        {/* <span>
+          <BsArrowBarLeft className='ArrowIcon' />
+          <BsArrowBarRight className='ArrowIcon' />
+        </span> */}
+      </div>
+      <RiArrowLeftLine className='ArrowIcon1' />
       <article className='activitiesArt'>
         <div>
           <img src={BlueLagoon} alt='BlueLagoon' className='activitiesImg' />
@@ -50,6 +61,7 @@ const Activities: React.FC<IActivities> = (props) => {
           <h4>Water Sports</h4>
         </div>
       </article>
+      <RiArrowRightLine className='ArrowIcon2' />
     </section>
   );
 };

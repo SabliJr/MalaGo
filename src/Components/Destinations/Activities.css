@@ -1,6 +1,8 @@
 .activitiesSec {
     max-width: 1124px;
     margin: 8rem auto;
+    position: relative;
+
 }
 
 .activities {
@@ -33,4 +35,34 @@
     margin: .5rem 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: .8px;
+}
+
+.ArrowDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ArrowIcon1 {
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1rem;
+    position: absolute;
+    color: chocolate;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: .2rem .3rem;
+}
+
+.ArrowIcon2 {
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1rem;
+    position: absolute;
+    color: chocolate;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: .2rem .3rem;
 }
