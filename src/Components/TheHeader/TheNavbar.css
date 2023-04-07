@@ -56,6 +56,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    position: relative;
 }
 
 .menuDiv {
@@ -127,4 +128,86 @@
     font-style: italic;
     line-height: 1.2;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
+        .menuDiv {
+            position: absolute;
+            top: 4rem;
+            right: -1000%;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            width: 15.625rem;
+            height: 100vh;
+            border-radius: .8rem;
+            padding: 3rem 0;
+            z-index: 3;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        @media only screen and (max-width: 580px) {
+
+            .Nav {
+                margin: 0 1rem;
+            }
+
+            .LogoIcon,
+            .go,
+            .LogoText {
+                font-size: 1.8rem;
+            }
+
+            .singIn {
+                font-size: 1.5rem;
+                padding: .3rem .4rem;
+                font-weight: normal;
+                border-radius: .3rem;
+            }
+
+            .HeroImg {
+                border-radius: 0;
+            }
+
+            .heroContent {
+                height: 20.75rem;
+            }
+
+            .TextDiv {
+                top: 11.5rem;
+                left: 50%;
+                width: 90%;
+                transform: translate(-50%);
+            }
+
+            .heroTitle {
+                font-size: 3.2rem;
+                font-weight: 600;
+                letter-spacing: 3px;
+            }
+
+            .heroText {
+                font-size: 1.2rem;
+                font-weight: 500;
+                letter-spacing: .3px;
+            }
+
+            .menuItems {
+                justify-content: left;
+                overflow-x: scroll;
+                margin: 3rem .6rem 1rem;
+                gap: 1.5rem;
+            }
+
+            .MenuItem {
+                width: 40vw;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                font-weight: normal;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
 }
