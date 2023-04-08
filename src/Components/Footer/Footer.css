@@ -5,9 +5,8 @@
 
 .footerArt {
     margin: 3rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .copyRight {
@@ -51,4 +50,24 @@
     font-size: 1.5rem;
     color: #2c3e50;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1034px) {
+    .footerArt {
+        margin: 1.5rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: 800px) {
+        .footer {
+            margin: 5rem auto;
+        }
+
+        .footerArt {
+            margin: 1.5rem 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media only screen and (max-width: 580px) {}
+    }
 }

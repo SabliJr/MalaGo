@@ -23,8 +23,6 @@ const AboutMalt: React.FC<IProps> = (props) => {
       </article>
       <div className='videoDiv'>
         <iframe
-          width='625'
-          height='350'
           className='IVideo'
           src='https://www.youtube-nocookie.com/embed/MYr8xuEO-l4?controls=0'
           title='YouTube video player'
