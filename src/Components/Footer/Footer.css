@@ -1,23 +1,24 @@
 .footer {
-    width: 1124px;
+    max-width: 1124px;
     margin: 8rem auto 5rem;
 }
 
 .footerArt {
     margin: 3rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
 }
 
 .copyRight {
     font-size: .8rem;
     color: rgb(118, 114, 114);
-    margin: .3rem 0;
 }
 
 .footerLinks h4 {
     color: #243763;
-    margin: .5rem 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .8px;
 }
 
 .footerLinks li {
@@ -31,19 +32,17 @@
 }
 
 .socialDiv h4 {
-    font-size: .9rem;
+    font-size: 1.2rem;
     color: #243763;
-    margin: .5rem auto;
+    margin: .5rem 0 .8rem;
     width: 70%;
-    text-align: center;
+    letter-spacing: .8px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .socialDiv div {
-    margin: 1.5rem auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+    gap: 1.5rem;
 }
 
 .socialDiv div>* {
@@ -55,7 +54,6 @@
 @media only screen and (max-width: 1034px) {
     .footerArt {
         margin: 1.5rem 1rem;
-        grid-template-columns: repeat(3, 1fr);
     }
 
     @media only screen and (max-width: 800px) {
@@ -64,10 +62,26 @@
         }
 
         .footerArt {
-            margin: 1.5rem 1rem;
-            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            margin: 1rem 1rem 0;
         }
 
-        @media only screen and (max-width: 580px) {}
+        @media only screen and (max-width: 580px) {
+            .footerArt {
+                flex-direction: column-reverse;
+                justify-content: flex-start;
+                gap: 2rem;
+                margin: 2rem 2rem 0;
+            }
+
+            .socialDiv div {
+                gap: .8rem;
+                justify-content: flex-start;
+            }
+
+            .socialDiv h4 {
+                width: 60%;
+            }
+        }
     }
 }

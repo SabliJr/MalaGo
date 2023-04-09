@@ -163,7 +163,7 @@
             top: 3.5rem;
             right: -1000%;
             flex-direction: column;
-            background-color: #f9f9f9;
+            background-color: #f9f9f9b7;
             width: 15.625rem;
             height: 100vh;
             border-radius: 0.8rem;
@@ -171,6 +171,7 @@
             z-index: 3;
             box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
             transition: all .6s ease-in-out;
+            backdrop-filter: blur(30px);
         }
 
         .btnDiv {
