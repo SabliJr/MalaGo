@@ -2,7 +2,6 @@
     max-width: 1124px;
     margin: 8rem auto;
     position: relative;
-
 }
 
 .activities {
@@ -65,4 +64,66 @@
     border-radius: 50%;
     background-color: #fff;
     padding: .2rem .3rem;
+}
+
+@media only screen and (max-width: 1034px) {
+    .activitiesSec {
+        margin: 8rem 1rem;
+    }
+
+    .activities {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+    .activitiesImg {
+        width: 65vw;
+        height: 90%;
+    }
+
+    .ArrowIcon1,
+    .ArrowIcon2 {
+        font-size: 2.3rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .activitiesSec {
+            margin: 4rem 1rem;
+        }
+
+        .activities {
+            font-size: 2.3rem;
+            font-weight: 700;
+        }
+
+        .activitiesImg {
+            width: 60vw;
+            height: 95%;
+        }
+
+        @media only screen and (max-width: 580px) {
+            .activitiesSec {
+                margin: 5rem 1rem;
+            }
+
+            .activities {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .activitiesImg {
+                width: 70vw;
+                height: 85%;
+            }
+
+            .activitiesArt>div h4 {
+                font-size: 1.6rem;
+            }
+
+            .ArrowIcon1,
+            .ArrowIcon2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

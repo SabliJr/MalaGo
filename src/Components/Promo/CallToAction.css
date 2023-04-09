@@ -47,3 +47,35 @@
     font-weight: 600;
     padding: .3rem .5rem;
 }
+
+@media only screen and (max-width: 1034px) {
+    .cta {
+        margin: 5rem 1rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 500px) {
+            .cta {
+                height: 18rem;
+                margin: 3rem 1rem;
+            }
+
+            .promoDiv {
+                width: 85%;
+            }
+
+            .promoDiv h2 {
+                font-size: 2rem;
+            }
+
+            .promoDiv p {
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .promoDiv button {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

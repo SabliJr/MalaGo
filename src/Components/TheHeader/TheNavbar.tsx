@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TheNavbar.css";
 
 //Icons
-import { MdTravelExplore, MdRestaurant } from "react-icons/md";
+import { MdTravelExplore, MdRestaurant, MdOutlineClose } from "react-icons/md";
 import { BiBed } from "react-icons/bi";
 import { BsHouses } from "react-icons/bs";
 import { FaPlaceOfWorship } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 
 import HeroImg from "../../Assets/Malago.jpg";
 
 interface ITheNav {}
 
 const TheNavbar: React.FC<ITheNav> = (props) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <>
       <header className='theHeader'>
@@ -23,11 +26,22 @@ const TheNavbar: React.FC<ITheNav> = (props) => {
             </h1>
           </div>
           <div className='btnDiv'>
-            <div className='menuDiv'>
+            <div className={isOpen ? "menuDiv openMenu" : "menuDiv"}>
               <li>Travel Info</li>
               <li>Tickets & Offers</li>
             </div>
             <button className='singIn'>Sing in</button>
+            {isOpen ? (
+              <MdOutlineClose
+                className='MenuIcon'
+                onClick={() => setIsOpen(!isOpen)}
+              />
+            ) : (
+              <AiOutlineMenu
+                className='MenuIcon'
+                onClick={() => setIsOpen(!isOpen)}
+              />
+            )}
           </div>
         </nav>
       </header>
