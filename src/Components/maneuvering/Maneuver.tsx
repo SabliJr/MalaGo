@@ -14,7 +14,7 @@ const Maneuver: React.FC<IManeuver> = (props) => {
     <main className='maneuverMain'>
       <article className='maneuver'>
         <div className='maneuverText'>
-          <h2 className='maneuverIsland'>Navigate The Islands Easily</h2>
+          <h2 className='maneuverIsland'>Navigate The Islands Easily.</h2>
           <p className='maneuverP'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ea
             sed vel eius dolorem tempore magni architecto doloribus veniam, at

@@ -21,10 +21,6 @@ const Activities: React.FC<IActivities> = (props) => {
     <section className='activitiesSec'>
       <div className='ArrowDiv'>
         <h2 className='activities'>Activities</h2>
-        {/* <span>
-          <BsArrowBarLeft className='ArrowIcon' />
-          <BsArrowBarRight className='ArrowIcon' />
-        </span> */}
       </div>
       <RiArrowLeftLine className='ArrowIcon1' />
       <article className='activitiesArt'>
