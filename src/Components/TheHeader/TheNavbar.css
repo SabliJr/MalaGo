@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
 .LogoIcon,
@@ -32,6 +33,14 @@
     font-weight: 700;
 }
 
+.menuLinks {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #34495e;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .singIn {
     background-color: #243763;
     border: transparent;
@@ -43,13 +52,15 @@
     letter-spacing: 1px;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    cursor: pointer;
 }
 
 .menuItems {
     display: flex;
     justify-content: space-between;
-    margin: 3rem 0 1.2rem;
+    margin: 3rem auto 1.2rem;
     gap: 3rem;
+    max-width: 1124px;
 }
 
 .btnDiv {
@@ -62,13 +73,8 @@
 .menuDiv {
     display: flex;
     align-items: center;
-    list-style: none;
     gap: 1rem;
-    font-size: 1.4rem;
-    font-weight: 400;
     cursor: pointer;
-    color: #34495e;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .MenuItem {
@@ -83,6 +89,7 @@
     cursor: pointer;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .TheHero {
