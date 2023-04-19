@@ -20,7 +20,7 @@
     padding: 1.3rem 0 2.5rem;
 }
 
-.activitiesImg {
+.activityImg {
     width: 28vw;
     height: 90%;
     object-fit: cover;
@@ -76,7 +76,7 @@
         font-weight: 700;
     }
 
-    .activitiesImg {
+    .activityImg {
         width: 65vw;
         height: 90%;
     }
@@ -96,7 +96,7 @@
             font-weight: 700;
         }
 
-        .activitiesImg {
+        .activityImg {
             width: 60vw;
             height: 95%;
         }
@@ -111,7 +111,7 @@
                 font-weight: 600;
             }
 
-            .activitiesImg {
+            .activityImg {
                 width: 70vw;
                 height: 85%;
             }
